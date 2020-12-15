@@ -1,1 +1,1 @@
-d=document;q=d[g='getElementsByClassName']('q');t.onchange=_=>{o=0;for(i=0;i<q.length;i++)m=+d[g]('p')[i][n='innerHTML']*q[i].value,o+=m,d[g]('c')[i][n]=m[x='toFixed'](2),s[n]=o[x](2)}
+q=(d=document)[g='getElementsByClassName']`q`;t.onchange=_=>{o=0;for(i=0;i<q.length;i++)m=+d[g]`p`[i][n='innerHTML']*q[i].value,o+=m,d[g]`c`[i][n]=m[x='toFixed'](2),s[n]=o[x](2)}
