@@ -1,1 +1,1 @@
-d=document;g='getElementsByClassName';n='innerHTML';x='toFixed';q=d[g]('q');t.onchange=_=>{o=0;for(i=0;i<q.length;i++){m=parseFloat(d[g]('p')[i][n])*parseInt(q[i].value);o+=m;d[g]('c')[i][n]=m[x](2)}s[n]=o[x](2)}
+d=document;q=d[g='getElementsByClassName']('q');t.onchange=_=>{o=0;for(i=0;i<q.length;i++)m=+d[g]('p')[i][n='innerHTML']*q[i].value,o+=m,d[g]('c')[i][n]=m[x='toFixed'](2),s[n]=o[x](2)}
