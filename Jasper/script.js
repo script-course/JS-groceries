@@ -4,9 +4,12 @@ const ARTICLES = Array.from(document.getElementsByClassName('article'))
 GROCERIES.onchange = () => {
     let groceriesTotal = 0
     ARTICLES.forEach(article => {
-        let articleTotal = article.getElementsByClassName('articleCount')[0].value * article.getElementsByClassName('articlePrice')[0].innerHTML
-        article.getElementsByClassName('articlePriceTotal')[0].innerHTML = makeInteger(articleTotal)
-        groceriesTotal += articleTotal;
+        let count = article.getElementsByClassName('articleCount')[0].value
+        let price = article.getElementsByClassName('articlePrice')[0].innerHTML
+        let total = count * price
+
+        article.getElementsByClassName('articlePriceTotal')[0].innerHTML = makeInteger(total)
+        groceriesTotal += total;
     });
     document.getElementById('allArticlesPriceTotal').innerHTML =  makeInteger(groceriesTotal)
 }
