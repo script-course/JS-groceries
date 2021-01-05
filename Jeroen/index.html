@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Boodschappenlijst opdracht</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table id="groceryTable">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Prijs</th>
+                <th>Aantal</th>
+                <th>Subtotaal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Brood</td>
+                <td class="productPrice">1.00</td>
+                <td>
+                    <input type="number" step="1" min="0" max="100" value="0" class="productQuantity">
+                </td>
+                <td class="productSubTotal">0.00</td>
+            </tr>
+            <tr>
+                <td>Broccoli</td>
+                <td class="productPrice">0.99</td>
+                <td>
+                    <input type="number" step="1" min="0" max="100" value="0" class="productQuantity">
+                </td>
+                <td class="productSubTotal">0.00</td>
+            </tr>
+            <tr>
+                <td>Krentenbollen</td>
+                <td class="productPrice">1.20</td>
+                <td>
+                    <input type="number" step="1" min="0" max="100" value="0" class="productQuantity">
+                </td>
+                <td class="productSubTotal">0.00</td>
+            </tr>
+            <tr>
+                <td>Noten</td>
+                <td class="productPrice">2.99</td>
+                <td>
+                    <input type="number" step="1" min="0" max="100" value="0" class="productQuantity">
+                </td>
+                <td class="productSubTotal">0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td id="grandTotal">0.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
